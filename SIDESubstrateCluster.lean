@@ -12,3 +12,5 @@ import SIDESubstrateCluster.FanoLabeling
 import SIDESubstrateCluster.SteaneLabeling
 import SIDESubstrateCluster.T7Labeling
 import SIDESubstrateCluster.Cluster
+
+import SIDESubstrateCluster.PairingObstruction
