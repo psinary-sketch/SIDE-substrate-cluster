@@ -103,9 +103,17 @@ theorem steane_to_substrate_right_inv (q : SteaneQubit) :
 
 /-! ## Partition preservation (Test 1) -/
 
-/-- Column weight of a Steane qubit in the parity-check matrix —
-equivalently, the number of stabilizer generators acting nontrivially
-on the qubit. -/
+/-- Column weight of a Steane qubit in the parity-check matrix.
+
+**Scope of what is compiled here (W-ORD-STEANE, 2026-07-22).** This is a
+hand-assigned *label* on the seven qubits; `weight_preserved_*` below prove the
+compiled content — that this label AGREES with the substrate's Hamming weight
+under the canonical bijection (a genuine, if thin, statement: a mis-defined
+bijection, e.g. `b100 ↦ q4`, would falsify it). The physical identification
+"column weight = the number of stabilizer generators acting nontrivially on the
+qubit" is the standard Steane/CSS reading and is **manuscript-resident**
+(ARITHMETIC_ORIGIN_STEANE_CODE §3.2), NOT proved here — the kernel certifies the
+label-level weight match, not the stabilizer-count meaning. -/
 def SteaneQubit.columnWeight : SteaneQubit → Nat
   | .q1 | .q2 | .q3 => 1
   | .q4 | .q5 | .q6 => 2
