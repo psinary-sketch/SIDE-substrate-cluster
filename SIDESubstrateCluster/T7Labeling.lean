@@ -16,8 +16,12 @@ This file establishes the canonical bijection between the substrate
 ## The labeling
 
 Each Trivium quadratic field K = ℚ(√d) for d ∈ {−1, 2, 3, −2, −3, 6, −6}
-carries the glide reflection φ : s ↦ 1 − s̄ on its critical strip. The
-quotient is a Möbius strip. The seven strips share the critical line
+gives one strip of klein_trivium.pdf. How a strip is built from the
+field's critical strip is that manuscript's own statement, retired here
+to the errata and compiled nowhere in this kernel: the map this header
+named before, read as written, fixes the critical line pointwise with no
+translation, and its quotient of the strip is a half-strip.
+The seven strips share the critical line
 σ = 1/2 as common boundary.
 
 The strips are labeled by their discriminant d, and the bijection to
